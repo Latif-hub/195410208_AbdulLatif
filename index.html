@@ -18,7 +18,146 @@
 		</div>
 		</div>
  <!--  ============================================================================================================  -->
+<div class="menu">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
 
+
+.topnav {
+  overflow: hidden;
+  background-color: lightgreen;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: Black;
+  font-family: Times New Roman ;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.active {
+  background-color: lightgreen;
+  color: linen;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float:Left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 10px;    
+  border: none;
+  outline: none;
+  color: Black;
+  padding: 14px 16px;
+  background-color: Lightgreen;
+  font-family: Times New Roman ;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightblue;
+  min-width: 160px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: Green;
+  color: white;
+ 
+}
+
+.dropdown-content a:hover {
+  background-color: Darkcyan;
+  color: Yellow;
+  font-size: 13px;   
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+ <!--  ============================================================================================================  -->
+  <a href="index.html"> BIODATA</a>
+ <!--  ============================================================================================================  -->
+  	<a href="Kontak.html"> <b> KONTAK </b> </a>
+ <!--  ============================================================================================================  -->
+	<a href="Alumni.html"> <b> MATERI KULIAH </b> </a>
+<!--  ============================================================================================================  -->
+	<a href="Rutinitas.html"> KEGIATAN</a>
+ <!--  ============================================================================================================  -->
+	
+  	<a href="javascript:void(0);" style="font-size:10px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+	<script>
+	function myFunction() {
+  	var x = document.getElementById("myTopnav");
+ 	if (x.className === "topnav") {
+   	x.className += " responsive";
+  	} else {
+    	x.className = "topnav";
+  	}
+	}
+	</script>
+	</body>
+	</div>	
  <!--  ============================================================================================================  -->
 		<div class="badan">			
 			<div class="sidebar"></br></br></br>
@@ -88,239 +227,4 @@ font-family: Times New Roman;
       	<div class="col-md-4">
       	<div class="foto">
 <!-- ========================================================================================================== -->
-       	<center> 	<img src="Nuris3.jpg" class="img-thumbnail" border="2px" width="300" height="auto">  
-	 	<font color=Navy> <h2> ABDUL LATIF  </center> </h2> </color>
-      		</div>
-      		</div>
-<!-- ========================================================================================================== -->
-     	<dd> 	<div class="col-md-8 kertas-biodata">
-        		<div class="biodata">
-        		<table width="100%" border="0">
-    		<tbody><tr>
-        		<td valign="top">
-        		<table border="0" width="100%" style="padding-left: 2px; padding-right: 13px;">
-          		<tbody>
-<!-- ========================================================================================================== -->
-            	<tr>
-              		<td width="25%" valign="top" class="textt">	Nama Panggilan 	</td>
-                		<td width="3%">:</td>
-                		<td style=" font-weight:bold">			Duel 		</td>
-            	</tr>
-<!-- ========================================================================================================== -->
-         	<tr>
-              		<td class="textt">				Tempt/Tgl Lahir	</td>
-                		<td>:</td>
-                	<td>						Asahan, 16 Juni 2000	</td>
-            	</tr>
-<!-- ========================================================================================================== -->
- 		<td valign="top" class="textt">		Alamat		</td>
-                		<td valign="top">:</td>
-                	<td>						Jabung Kab. Lampung Timur	</td>
-            	</tr>
-<!-- ========================================================================================================== -->
-          	<tr>
-              		<td class="textt">				Jenis Kelamin	</td>
-                		<td>:</td>
-                	<td>						Laki-Laki</td>
-            	</tr>
-<!-- ========================================================================================================== -->
-          <tr>
-              		<td class="textt">				Perguruan Tinggi </td>
-                		<td>:</td>
-                		<td> 					STMIK AKAKOM Yogyakarta </td>
-            </tr>
-<!-- ========================================================================================================== -->
-          <tr>
-              		<td class="textt">				Program Study</td>
-                		<td>:</td>
-                		<td>					Teknik Informatika</td>
-            </tr>
-<!-- ========================================================================================================== -->
-          <tr>
-              		<td valign="top" class="textt">		NIM</td>
-                		<td valign="top">:</td>
-                <td>						195410208</td>
-            </tr>
-<!-- ========================================================================================================== -->
-            <tr>
-              		<td valign="top" class="textt">		Angkatan</td>
-                		<td valign="top">:</td>
-                <td>						Tahun 2019</td>
-            </tr>
-<!-- ========================================================================================================== -->
- 		<td valign="top" class="textt">		Facebook</td>
-                		<td valign="top">:</td>
-                <td>						Abdul el Latif</td>
-            </tr>
-<!-- ========================================================================================================== -->
- 		<td valign="top" class="textt">		Instagram</td>
-                		<td valign="top">:</td>
-                <td>						@abd_latif16</td>
-            </tr>
-<!-- ========================================================================================================== -->
- 		<td valign="top" class="textt">		No.Telpon</td>
-                		<td valign="top">:</td>
-                <td>						+62 81366365845</td>
-            </tr>
-<!-- ========================================================================================================== -->
- 		<td valign="top" class="textt">		E-Mail </td>
-                		<td valign="top">:</td>
-                <td>						abduellatif16@gmail.com</td>
-            </tr>
-<!-- ========================================================================================================== -->
- 		<td valign="top" class="textt">		Motto Hidup</td>
-                		<td valign="top">:</td>
-                <td>						Loss Raa Rewel</td>
-            </tr>
-	</br></br>
-<!-- ========================================================================================================== -->
-<!-- ========================================================================================================== -->
-<!-- ========================================================================================================== -->
-		<td style="color: blue; font-weight:bold">	PENDIDIKAN </td>
-               		<td valign="top">:</td>
-                		<td></td>
-            </tr>
-<!-- ========================================================================================================== -->
- 		<td valign="top" class="textt">				</td>
-                		<td valign="top">:</td>
-               		<td><font color=Blue>			SD Negeri 2 Asahan Lampung </td>
-            </tr>
-<!-- ========================================================================================================== -->
- 		<td valign="top" class="textt">				</td>
-                		<td valign="top">:</td>
-                		 <td><font color=blue>			SMP I Minhajuth Thullab Lampung</td>
-            </tr>
-<!-- ========================================================================================================== --> 
-		<td valign="top" class="textt">				</td>
-                		<td valign="top">:</td>
-                		<td><font color=Blue>			SMK Nuris Jember Jawa Timur </td>
-            </tr>
-<!-- ========================================================================================================== --> 
-		<td valign="top" class="textt">				</td>
-                		<td valign="top">:</td>
-              		<td><font color=Blue>			 STMIK AKAKOM Yogyakarta </td>
-            </tr>
-<!-- ========================================================================================================== --> 
-<td style="color: Green; font-weight:bold">	NON-FORMAL </td>
-               		<td valign="top">:</td>
-                		<td></td>
-            </tr>
-<!-- ========================================================================================================== -->
-<td valign="top" class="textt">				</td>
-                		<td valign="top">:</td>
-              		<td><font color=Green>			Ponpes Minhajuth Thullab Lampung</td>
-            </tr>
-<!-- ========================================================================================================== --> 
-<td valign="top" class="textt">				</td>
-                		<td valign="top">:</td>
-              		<td><font color=Green>			Ponpes Nurul Islam Jember Jawa Timur </td>
-            </tr>
-<!-- ========================================================================================================== --> 
-<td valign="top" class="textt">				</td>
-                		<td valign="top">:</td>
-              		<td><font color=Green>			Ponpes Nurul Ummah Kotagede Yogyakarta </td>
-            </tr>
-<!-- ========================================================================================================== --> 
-
-        </tbody></table>
-        </td>
-    </tr>
-    </tbody></table>
-  </div>
-      </div>
-    </div>
-  </div>
-	</br></br>
-</div>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-
-<!-- ========================================================================================================== -->
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-#mySidenav a {
-  position: absolute;
-  left: -110px;
-  transition: 0.3s;
-  padding: 15px;
-  width: 95px;
-  text-decoration: none;
-font-family: Times New Roman;
-  font-size: 12px;
-  color: white;
-  border-radius: 0 5px 5px 0;
-}
-
-#mySidenav a:hover {
-  left: 0;
-}
-
-#about {
-  top: 320px;
-  background-color: #4CAF50;
-}
-
-#blog {
-  top: 380px;
-  background-color: Darkblue;
-}
-
-#projects {
-  top: 440px;
-  background-color: purple;
-}
-
-#Keren {
-  top: 500px;
-  background-color: red;
-}
-
-#contact {
-  top: 560px;
-  background-color: brown
-}
-
-
-</style>
-</head>
-<body>
-
-<div id="mySidenav" class="sidenav">
-  <a href="https://wa.me/621366365845?" id="about"> 				WhatsApp </br> +62 81366365845 </a>
-  <a href="https://web.facebook.com/profile.php?id=100009232838849" id="blog"> 		Facebook </br>Abdul el Latif</a>
-  <a href="https://www.instagram.com/abd_latif16/?hl=id" id="projects">			Instagram </br> @abd_latif16</a>
-  <a href="tel:+6281366365845" id="Keren">					Telpon </br>+62 81366365845</a>
-  <a href="https://abduellatif16@gmail.com" id="contact">				E-mail </br> duelqi@gmail.com</a>
-</div>
-
-
-   
-</body>
-
-			</div>
-
-<!--  ============================================================================================================  -->
-		<div class="clear"> 
-		<div class="footer2">
- 
-  <div class="col" style="background:none">
-  <p>~ Copyright &#169; Dullatep<script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> <a expr:href='data:blog.homepageUrl'><data:blog.title/></a> ~</br>
-All rights reserved.  </br>  </br> 
-</p> 
-		
-   	</div></div>			 			
-  </div>
-</div>
-</body> 
-  </dd>		 
-</div></div>
-		</div>
-		</div>
-		</div>
-		</div>
-	</body>
-	</html>
- <!--  ============================================================================================================  -->
- <!--  ============================================================================================================  -->
+       	<center> 	<img src="Nuris3.jpg" class="img-thumbnail" border="2px" 
